@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+    color: #2d3748;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.titleButtons {
+    display: flex;
+    gap: 15px;
+}
+
+.titleButtons div {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.pageContent {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.pageContentLower {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#selfPortrait {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+#selfPortrait:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+#moreInfoOptions {
+    padding: 30px;
+}
+
+
+.contentBox {
+    background: #cacbcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.worksContentBox {
+    background: #cacbcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.worksContentBox > img {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+
+.socialsPageButton {
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.socialsContentBox {
+    background: #cacbcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.socialsContentBox > img{
+    max-width: 75px;  
+}
+
+.pageButton {
+    display: inline-block;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.pageButton > a, .socialsPageButton > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pageButton:hover, .socialsPageButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .pageContent {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .pageContentLower {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .titleButtons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#emailForm {
+    background: #cacbcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#emailForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #2d3748;
+}
+
+#emailForm input[type="text"],
+#emailForm input[type="email"],
+#emailForm textarea {
+    width: 90%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#emailForm input[type="text"]:focus,
+#emailForm input[type="email"]:focus,
+#emailForm textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+    outline: none;
+}
